@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="HotelesAPP.ApiService/HotelesAPP.ApiService.csproj" />
+  <Project Path="HotelesAPP.AppHost/HotelesAPP.AppHost.csproj" />
+  <Project Path="HotelesAPP.ServiceDefaults/HotelesAPP.ServiceDefaults.csproj" />
+  <Project Path="HotelesAPP.Tests/HotelesAPP.Tests.csproj" />
+  <Project Path="HotelesAPP.Web/HotelesAPP.Web.csproj" />
+</Solution>
