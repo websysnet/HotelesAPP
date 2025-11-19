@@ -31,10 +31,19 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
+
+// Get All Hoteles
 app.Map("/hoteles",(HotelController hotelController) =>
+{    return hotelController.GetHoteles();
+
+}).WithDisplayName("GetHoteles");
+
+// Get Hotel by Id
+app.Map("/hoteles/{id:int}",(int id, HotelController hotelController) =>
 {
-    return hotelController.GetHoteles();
-});
+    return hotelController.GetHotelById(id);
+    
+}).WithDisplayName("GetHotelById");
 
 app.Run();
 
